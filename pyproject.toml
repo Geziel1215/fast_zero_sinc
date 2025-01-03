@@ -8,6 +8,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "3.13.*"
 fastapi = "^0.115.6"
+sqlalchemy = "2.0.31"
+greenlet = "^3.1.1"
+pydantic-settings = "^2.7.1"
+alembic = "^1.14.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.8.4"
@@ -20,7 +24,7 @@ pythonpath = "."
 addopts = '-p no:warnings'
 
 [tool.ruff]
-line-length = 79
+line-length = 90
 extend-exclude = ['migrations']
 
 [tool.ruff.lint]
